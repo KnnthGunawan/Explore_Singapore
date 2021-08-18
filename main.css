@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.top {
+    text-align: center;
+    padding: 1em 30%;
+}
+.top:not(.about-top) h1 {
+    padding: .5em 0;
+    font-size: 2rem;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+.top img {
+    border-radius: 50%;
+    width: 75%;
+    max-width: 300px;
+}
+.middle {
+    margin: 0 1.5em;
+    padding: 1em 0 1.5em 0;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+.middle h2 {
+    text-align: center;
+    margin: 1em;
+    position: relative;
+    font-weight: bold;
+}
+.middle a{
+    text-decoration: none;
+}
+
+.bottom {
+    color: white;
+    text-align: center;
+    padding: 1em 0 1.5em;
+}
+.title{
+    padding: 0.5em 0 0.5em 0;
+}
+.bottom li + li {
+    margin-top: 1rem;
+}
+.bottom li{
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0 1em;
+}
+
+.images{
+    display: block;
+    width: 100%;
+}
+
+.contacts{
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media (min-width: 500px){
+    .top:not(.about-top) h1 {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 900px){
+    .top:not(.about-top) h1 {
+        font-size: 4rem;
+    }
+    body .title{
+        text-align: left;
+    }
+    .bottom .title{
+        padding-left: 2.5em;
+    }
+    .bottom-title{
+        padding-left: -2.5em !important;
+    }
+    .about-title{
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 1400px){
+    section.part{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+            "left right";
+    }
+    .middle {
+        grid-area: left;
+    }
+    .title{
+        font-size: 1.8rem;
+    }
+    .right-col {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+    .bottom h2{
+        font-size: 2rem;
+    }
+    .bottom li + li {
+        margin-top: 2rem;
+    }
+    .bottom li{
+        text-align: left;
+        font-size: 1.6rem;
+        padding: 0 1em;
+    }
+    .about-title2{
+        padding-top: 1.7em;
+    }
+    .about-right-col{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .h3-contacts{
+        text-align: center;
+    }
+    .h3-contacts{
+        margin-top: 2rem;
+    }
+}
+

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.information h1{
+    text-align: center;
+    margin: 1.5rem 1rem;
+    font-size: 4vw;
+}
+
+.information p{
+    text-align: center;
+    margin: 1rem 10%;
+    font-size: 3vw
+}
+
+.information .bottom-part{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.photos {
+    text-align: center;
+  }
+
+.photo{
+    margin: 0rem;
+    width: 15%;
+    height: auto;
+}
+
+
+@media (min-width: 700px) {
+    .information h1{
+        font-size: 30px;
+    }
+    .information p{
+        margin: 1rem 20%;
+        font-size: 15px;
+    }
+    .information .bottom-part{
+        font-size: 20px;
+    }
+    .photo{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    .information p{
+        margin: 1rem 25%;
+    }
+    .information .bottom-part{
+        font-size: 25px;
+    }
+    .photo{
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (min-width: 2000px) {
+    .information h1{
+        font-size: 1vw;
+    }
+    .information p{
+        font-size: 0.5vw;
+    }
+    .information .bottom-part{
+        font-size: 0.75vw;
+    }
+    .photo{
+        width: 15%;
+        height: auto;
+    }
+}
