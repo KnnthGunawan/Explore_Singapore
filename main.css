@@ -69,6 +69,9 @@ body {
     .top:not(.about-top) h1 {
         font-size: 3rem;
     }
+    p{
+        font-size: 15px;
+    }
 }
 @media (min-width: 900px){
     .top:not(.about-top) h1 {
